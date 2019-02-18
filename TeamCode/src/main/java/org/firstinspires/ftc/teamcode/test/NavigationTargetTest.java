@@ -27,9 +27,8 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package org.firstinspires.ftc.robotcontroller.external.samples;
+package org.firstinspires.ftc.teamcode.test;
 
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
@@ -91,9 +90,8 @@ import static org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocaliz
  * is explained below.
  */
 
-@TeleOp(name="Concept: Vuforia Rover Nav", group ="Concept")
-@Disabled
-public class ConceptVuforiaNavRoverRuckus extends LinearOpMode {
+@TeleOp(name="Test: Vuforia", group ="Test")
+public class NavigationTargetTest extends LinearOpMode {
 
     /*
      * IMPORTANT: You need to obtain your own license key to use Vuforia. The string below with which
@@ -107,9 +105,7 @@ public class ConceptVuforiaNavRoverRuckus extends LinearOpMode {
      * Once you've obtained a license key, copy the string from the Vuforia web site
      * and paste it in to your code on the next line, between the double quotes.
      */
-
-    private static final String VUFORIA_KEY = " -- YOUR NEW VUFORIA KEY GOES HERE  --- ";
-
+    private static final String VUFORIA_KEY = "AVsZE7//////AAAAGRVvNLlOcEfanfrtH92kG/k4GmxTFr4AEoE0W1PWWP8r+BNS7rV4JuoM3auHL8ycvzmzswTUj+1ij6VSyJNpSGdhDg8XzrPlXIadc7D+Jqv/XyOtzYGxOSAGxrct3XhxktY/2CwX/TsS2GWaod22x9FUxkIwRTCG9yAWxUhzlBKUWFF/tk8RRhKbrwv68aBMhQZXbVqocfQLQdwT+krDVuHLSSqqE3elZrdGEQ4Aimt47N1lyF3Y/MBc08VjoEGnFSYUKwwksT46X97MG6hpaElviGlEzz8hzbDIXv2/fsICYnjPw97IU4jdnzQOTin4ayQDh8/aTUvmACiUCmmrdLN8R/QbKPD1CqRvrKgUhqWL";
 
     // Since ImageTarget trackables use mm to specifiy their dimensions, we must use mm for all the physical dimension.
     // We will define some constants and conversions here
@@ -237,7 +233,7 @@ public class ConceptVuforiaNavRoverRuckus extends LinearOpMode {
          * Z is UP on the robot.  This equates to a bearing angle of Zero degrees.
          *
          * The phone starts out lying flat, with the screen facing Up and with the physical top of the phone
-         * pointing to the LEFT side of the Robot.  It's very important when you test this code that the top of the
+         * pointing to the LEFT side of the Robot10419.  It's very important when you test this code that the top of the
          * camera is pointing to the left side of the  robot.  The rotation angles don't work if you flip the phone.
          *
          * If using the rear (High Res) camera:
